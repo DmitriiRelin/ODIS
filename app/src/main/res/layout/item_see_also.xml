@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/see_also_main_width"
+    android:layout_height="@dimen/see_also_main_height"
+    android:layout_margin="@dimen/see_also_margin"
+    android:backgroundTint="@color/primaryDarkColor"
+    app:cardCornerRadius="@dimen/see_also_cardCornerRadius">
+
+    <ImageView
+        android:id="@+id/see_also_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</androidx.cardview.widget.CardView>

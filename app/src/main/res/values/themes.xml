@@ -1,0 +1,234 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ODIS" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <style name="textInputLayout_style" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:hint">Search</item>
+        <item name="boxStrokeColor">@color/secondaryLightColor</item>
+        <item name="counterTextColor">@color/secondaryLightColor</item>
+        <item name="endIconDrawable">@drawable/ic_baseline_search_24</item>
+        <item name="endIconMode">custom</item>
+        <item name="endIconTint">@color/secondaryLightColor</item>
+        <item name="hintTextColor">@color/secondaryLightColor</item>
+        <item name="android:layout_margin">@dimen/small_margin</item>
+    </style>
+
+
+    <style name="textInputEditText_style">
+        <item name="android:textColor">@color/secondaryLightColor</item>
+        <item name="hintTextColor">@color/secondaryLightColor</item>
+        <item name="android:textCursorDrawable">@drawable/cursor</item>
+        <item name="android:textSize">20sp</item>
+        <item name="endIconMode">clear_text</item>
+    </style>
+
+
+    <style name="BottomNavigationViewTheme">
+        <item name="backgroundTint">@color/primaryColor</item>
+        <item name="itemIconTint">@color/secondaryLightColor</item>
+        <item name="itemTextColor">@color/secondaryLightColor</item>
+    </style>
+
+    <style name="HomeTitleTextViewStyle">
+        <item name="android:paddingStart">@dimen/small_padding_start</item>
+        <item name="android:paddingEnd">@dimen/small_padding_end</item>
+        <item name="android:textColor">@color/secondaryColor</item>
+        <item name="android:textSize">@dimen/big_title_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ErrorTitleTextViewStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">@dimen/error_title_big_layout_margin</item>
+        <item name="android:text">@string/error_title</item>
+        <item name="android:textColor">@color/secondaryLightColor</item>
+        <item name="android:textSize">@dimen/big_title_text_size</item>
+    </style>
+
+    <style name="ErrorDescriptionTextViewStyle">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">@dimen/error_description_medium_layout_margin</item>
+        <item name="android:text">@string/error_description</item>
+        <item name="android:textColor">@color/secondaryLightColor</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+    </style>
+
+    <style name="SwipeLayoutStyle">
+        <item name="android:layout_margin">@dimen/medium_margin_layout</item>
+        <item name="isFreeDragAfterOpen">true</item>
+        <item name="isTogether">true</item>
+        <item name="swipeDirection">left</item>
+    </style>
+
+    <style name="DeleteImageViewStyle">
+        <item name="android:layout_gravity">end</item>
+        <item name="android:background">@color/primaryDeleteColor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingStart">@dimen/delete_image_medium_padding</item>
+        <item name="android:paddingEnd">@dimen/delete_image_medium_padding</item>
+        <item name="android:src">@drawable/ic_baseline_delete_forever_24</item>
+    </style>
+
+
+    <style name="FavoritesEmptyListTextViewStyle">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:text">@string/favorites_empty_list</item>
+        <item name="android:textColor">@color/primaryLightColor</item>
+        <item name="android:textSize">@dimen/medium_title_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ProgressBarStyle">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:indeterminateDrawable">@drawable/spinner_ring</item>
+        <item name="android:indeterminateOnly">true</item>
+    </style>
+
+
+    <style name="HomeDescriptionTextViewStyle">
+        <item name="android:paddingStart">@dimen/small_padding_start</item>
+        <item name="android:paddingEnd">@dimen/small_padding_end</item>
+        <item name="android:textColor">@color/secondaryColor</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+    </style>
+
+
+    <style name="HeaderTextViewStyle">
+        <item name="android:layout_marginStart">@dimen/header_small_margin</item>
+        <item name="android:layout_marginTop">@dimen/header_medium_margin</item>
+        <item name="android:layout_marginEnd">@dimen/header_small_margin</item>
+        <item name="android:layout_marginBottom">@dimen/header_medium_margin</item>
+        <item name="android:background">@color/secondaryDarkColor</item>
+        <item name="android:gravity">center|start</item>
+        <item name="android:paddingStart">@dimen/header_medium_padding</item>
+        <item name="android:paddingTop">@dimen/header_small_padding</item>
+        <item name="android:paddingBottom">@dimen/header_small_padding</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="FavoriteItemTitleTextViewStyle">
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/primaryDarkColor</item>
+        <item name="android:gravity">center|start</item>
+        <item name="android:textColor">@color/secondaryLightColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:paddingEnd">@dimen/medium_padding_end</item>
+        <item name="android:paddingStart">@dimen/big_padding_start</item>
+    </style>
+
+
+    <style name="FavoriteItemDateTextViewStyle">
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/primaryDarkColor</item>
+        <item name="android:gravity">center|start</item>
+        <item name="android:paddingStart">@dimen/big_padding_start</item>
+        <item name="android:textColor">@color/secondaryLightColor</item>
+        <item name="android:textSize">@dimen/small_text_size</item>
+    </style>
+
+
+    <style name="HomeSeeAlsoTextViewStyle">
+        <item name="android:paddingStart">@dimen/small_padding_start</item>
+        <item name="android:paddingEnd">@dimen/small_padding_end</item>
+        <item name="android:text">@string/home_recycler_title</item>
+        <item name="android:textColor">@color/secondaryColor</item>
+        <item name="android:textSize">@dimen/medium_title_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">@dimen/big_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/medium_margin_bottom</item>
+    </style>
+
+
+    <style name="CalendarTitleTextViewStyle">
+        <item name="android:layout_marginTop">@dimen/calendar_big_layout_margin</item>
+        <item name="android:layout_marginEnd">@dimen/calendar_big_layout_margin</item>
+        <item name="android:layout_marginBottom">@dimen/calendar_big_layout_margin</item>
+        <item name="android:gravity">start|center</item>
+        <item name="android:paddingStart">@dimen/medium_padding_start</item>
+        <item name="android:text">@string/select_date_calendar</item>
+        <item name="android:textColor">@color/secondaryLightColor</item>
+        <item name="android:textSize">@dimen/medium_title_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CalendarSecondaryButtonStyle">
+        <item name="android:layout_marginStart">@dimen/calendar_big_layout_margin</item>
+        <item name="android:layout_marginTop">@dimen/calendar_small_layout_margin</item>
+        <item name="android:layout_marginEnd">@dimen/calendar_big_layout_margin</item>
+        <item name="android:backgroundTint">@color/secondaryColor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/calendar_big_padding</item>
+        <item name="android:paddingBottom">@dimen/calendar_big_padding</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CalendarMainButtonStyle">
+        <item name="android:layout_marginStart">@dimen/calendar_big_layout_margin</item>
+        <item name="android:layout_marginTop">@dimen/calendar_big_layout_margin</item>
+        <item name="android:layout_marginEnd">@dimen/calendar_big_layout_margin</item>
+        <item name="android:backgroundTint">@color/secondaryDarkColor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/calendar_big_padding</item>
+        <item name="android:paddingBottom">@dimen/calendar_big_padding</item>
+        <item name="android:textColor">@color/secondaryLightColor</item>
+        <item name="android:text">@string/select_date_calendar</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="CalendarYesterdayButtonStyle" parent="CalendarSecondaryButtonStyle">
+        <item name="android:text">@string/photo_of_yesterday_calendar</item>
+        <item name="android:layout_marginBottom">@dimen/calendar_big_layout_margin</item>
+    </style>
+
+    <style name="ShowVideoButtonStyle">
+        <item name="android:text">@string/show_video</item>
+        <item name="android:backgroundTint">@color/secondaryLightColor</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+
+    <style name="CalendarRandomButtonStyle" parent="CalendarSecondaryButtonStyle">
+        <item name="android:layout_marginTop">@dimen/calendar_big_layout_margin_top</item>
+        <item name="android:text">@string/photo_random_calendar</item>
+    </style>
+
+    <style name="CalendarCloseButtonStyle">
+        <item name="android:layout_margin">@dimen/calendar_big_layout_margin</item>
+        <item name="android:backgroundTint">@color/primaryDarkColor</item>
+        <item name="android:src">@drawable/ic_baseline_close_24</item>
+    </style>
+
+
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="MyDatePicker">
+        <item name="android:textColorPrimary">@color/secondaryColor</item>
+        <item name="colorControlNormal">@color/secondaryColor</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+</resources>

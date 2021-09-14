@@ -1,0 +1,47 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="small_padding_start">4dp</dimen>
+    <dimen name="big_padding_start">12dp</dimen>
+    <dimen name="medium_padding_start">8dp</dimen>
+    <dimen name="medium_padding_end">8dp</dimen>
+    <dimen name="small_padding_end">4dp</dimen>
+    <dimen name="big_title_text_size">32sp</dimen>
+    <dimen name="medium_text_size">16sp</dimen>
+    <dimen name="small_text_size">12sp</dimen>
+    <dimen name="medium_title_text_size">24sp</dimen>
+    <dimen name="big_margin_top">12dp</dimen>
+    <dimen name="medium_margin_bottom">8dp</dimen>
+    <dimen name="medium_margin_layout">8dp</dimen>
+    <dimen name="small_margin">4dp</dimen>
+
+    <dimen name="calendar_big_layout_margin">16dp</dimen>
+    <dimen name="calendar_big_layout_margin_button">24dp</dimen>
+    <dimen name="calendar_big_layout_margin_top">32dp</dimen>
+    <dimen name="calendar_small_layout_margin">4dp</dimen>
+    <dimen name="calendar_medium_layout_margin">4dp</dimen>
+    <dimen name="calendar_big_padding">12dp</dimen>
+    <dimen name="fixed_height_to_app_bar">80dp</dimen>
+
+    <dimen name="error_title_big_layout_margin">24dp</dimen>
+    <dimen name="error_description_medium_layout_margin">16dp</dimen>
+
+    <dimen name="delete_image_medium_padding">24dp</dimen>
+
+    <dimen name="header_medium_margin">8dp</dimen>
+    <dimen name="header_small_margin">4dp</dimen>
+    <dimen name="header_small_padding">4dp</dimen>
+    <dimen name="header_medium_padding">8dp</dimen>
+
+
+    <dimen name="overview_main_height">160dp</dimen>
+
+    <dimen name="see_also_main_height">80dp</dimen>
+    <dimen name="see_also_main_width">80dp</dimen>
+    <dimen name="see_also_margin">8dp</dimen>
+    <dimen name="see_also_cardCornerRadius">8dp</dimen>
+
+    <dimen name="circular_main_width">80dp</dimen>
+    <dimen name="circular_main_height">80dp</dimen>
+
+</resources>

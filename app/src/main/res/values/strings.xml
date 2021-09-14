@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ODIS</string>
+    <string name="title_home">Home</string>
+    <string name="title_overview">Overview</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="title_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_recycler_title">See also</string>
+
+    <string name="photo_of_the_day_stub">Photo of the day</string>
+    <string name="select_date_calendar">Select date</string>
+    <string name="photo_of_yesterday_calendar">Yesterday\'s One</string>
+    <string name="photo_random_calendar">Random photo</string>
+    <string name="show_video">Show video in browser</string>
+
+
+    <string name="favorites_empty_list">Your list is empty :(</string>
+    <string name="error_title">Photo not available</string>
+    <string name="error_description">Please, check your internet connection or use the favorites tab</string>
+
+
+</resources>

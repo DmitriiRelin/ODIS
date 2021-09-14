@@ -1,0 +1,2 @@
+rootProject.name = "ODIS"
+include ':app'

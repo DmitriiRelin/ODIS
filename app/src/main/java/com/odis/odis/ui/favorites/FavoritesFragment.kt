@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.annotation.Keep
 import androidx.core.widget.doOnTextChanged
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -19,6 +20,7 @@ import com.odis.odis.domain.entities.PictureOfDay
 import com.odis.odis.ui.favorites.favoritesRecycler.FavoritesRecyclerAdapter
 import dagger.hilt.android.AndroidEntryPoint
 
+@Keep
 @AndroidEntryPoint
 class FavoritesFragment : Fragment() {
 

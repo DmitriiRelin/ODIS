@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.annotation.Keep
 import com.odis.odis.R
 import com.odis.odis.Utils.*
 import com.odis.odis.databinding.CalendarDialogLayoutBinding
@@ -13,6 +14,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import java.util.*
 
+@Keep
 class BottomSheetFragment(private val listener: OnDateChangeListener) :
     BottomSheetDialogFragment() {
 

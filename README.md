@@ -7,7 +7,7 @@
 
 
 
- ![image-14-09-21-01-58](https://user-images.githubusercontent.com/85553499/133245856-f45ff448-6530-4b0a-b48e-f38ae67fba1f.jpeg)
+![image-14-09-21-01-58](https://user-images.githubusercontent.com/85553499/133389782-d24d6990-f4b6-49b4-a324-17a82f11f00c.png)
 
 ## Пользовательские возможности: 
 

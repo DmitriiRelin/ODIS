@@ -28,3 +28,5 @@
 <li> Glide </li>
 <li> Paging3 </li>
 <li> RecyclerView/ViewType/DiffUtil </li>
+<li> Android Navigation Component </li>
+

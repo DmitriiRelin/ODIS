@@ -9,6 +9,9 @@
 
 ![image-14-09-21-01-58](https://user-images.githubusercontent.com/85553499/133389782-d24d6990-f4b6-49b4-a324-17a82f11f00c.png)
 
+
+[Google Play](https://play.google.com/store/apps/details?id=com.odis.odis)
+
 ## Пользовательские возможности: 
 
 <li> Каждый день ты можешь увидеть новое фото или видео прямиком из космического пространства </li>

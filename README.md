@@ -1,7 +1,7 @@
 # ODIS
 *One day in space)*
 
-[# Google Play](https://play.google.com/store/apps/details?id=com.odis.odis)
+[Google Play](https://play.google.com/store/apps/details?id=com.odis.odis)
  
 ## Описание: 
 Космос - одно из самых загадочных и необычных явлений, но в тоже время красивых и ни на что не похожих. ODIS- это возможность каждый день получать самые свежие фото космоса с сервера NASA, быть постоянно в курсе любых изменений. Теперь космическое пространство в твоём телефоне. 

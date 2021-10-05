@@ -7,14 +7,17 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import com.odis.odis.Utils.SCROLL_TO_X
-import com.odis.odis.Utils.SCROLL_TO_Y
 import com.odis.odis.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity(), SettableToolbarTitle, ScrollableToTop {
+
+    companion object {
+        private const val SCROLL_TO_X = 0
+        private const val SCROLL_TO_Y = 0
+    }
 
     private lateinit var binding: ActivityMainBinding
 

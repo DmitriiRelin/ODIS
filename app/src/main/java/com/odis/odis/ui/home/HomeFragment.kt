@@ -10,8 +10,10 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
-import com.odis.odis.*
-import com.odis.odis.Utils.ERROR_TITLE
+import com.odis.odis.R
+import com.odis.odis.ResponseResult
+import com.odis.odis.ScrollableToTop
+import com.odis.odis.SettableToolbarTitle
 import com.odis.odis.Utils.REQUEST_MEDIA_TYPE_VIDEO
 import com.odis.odis.databinding.FragmentHomeBinding
 import com.odis.odis.domain.entities.PictureOfDay
@@ -19,9 +21,14 @@ import com.odis.odis.ui.calendar.BottomSheetFragment
 import com.odis.odis.ui.home.homeRecycler.HomeAdapter
 import dagger.hilt.android.AndroidEntryPoint
 
-@Keep
+
 @AndroidEntryPoint
 class HomeFragment : Fragment() {
+
+    companion object {
+        private const val ERROR_TITLE = "Error"
+        private const val VIDEO_MEDIA_TYPE = "video"
+    }
 
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
@@ -164,17 +171,17 @@ class HomeFragment : Fragment() {
                     })
                 blankFragment.show(childFragmentManager, blankFragment.tag)
             }
-            R.id.action_send -> {
-                val response = viewModel.pictureLiveData.value
-                if (response is ResponseResult.Success) {
-                    val picture = response.data
-                    val message = "URL: ${picture.url}, ${picture.title}"
-                    val intent = Intent(Intent.ACTION_SEND)
-                    intent.putExtra(Intent.EXTRA_TEXT, message)
-                    intent.type = "text/plain"
-                    startActivity(intent)
-                }
-            }
+//            R.id.action_send -> {
+//                val response = viewModel.pictureLiveData.value
+//                if (response is ResponseResult.Success) {
+//                    val picture = response.data
+//                    val message = "URL: ${picture.url}, ${picture.title}"
+//                    val intent = Intent(Intent.ACTION_SEND)
+//                    intent.putExtra(Intent.EXTRA_TEXT, message)
+//                    intent.type = "text/plain"
+//                    startActivity(intent)
+//                }
+//            }
         }
         return false
     }

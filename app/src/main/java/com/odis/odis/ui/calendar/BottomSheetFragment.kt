@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.annotation.Keep
 import com.odis.odis.R
 import com.odis.odis.Utils.*
 import com.odis.odis.databinding.CalendarDialogLayoutBinding
@@ -14,9 +13,20 @@ import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import java.util.*
 
-@Keep
+
 class BottomSheetFragment(private val listener: OnDateChangeListener) :
     BottomSheetDialogFragment() {
+
+    companion object {
+       private const val FIXED_STARTED_YEAR = 1998
+        private const val FIXED_MONTH = 0
+        private const val FIXED_DAY_OF_MONTH = 1
+        private  const val FIXED_STARTED_MONTH = 1
+        private  const val FIXED_END_MONTH = 12
+        private const val FIXED_STARTED_DAY = 1
+        private  const val FIXED_END_DAY = 1
+        private  const val FIXED_COUNT = 1
+    }
 
     interface OnDateChangeListener {
         fun onDateChange(date: String)

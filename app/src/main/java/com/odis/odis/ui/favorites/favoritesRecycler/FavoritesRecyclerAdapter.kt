@@ -5,8 +5,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.odis.odis.R
-import com.odis.odis.Utils.VIEW_TYPE_FAVORITE_HEADER
-import com.odis.odis.Utils.VIEW_TYPE_FAVORITE_ITEM
 import com.odis.odis.Utils.convertToListWithHeaders
 import com.odis.odis.domain.entities.PictureOfDay
 
@@ -14,6 +12,11 @@ class FavoritesRecyclerAdapter(
     private val onItemClickListenerFavorites: OnItemClickListenerFavorites,
     private val onItemClickDelete: OnItemClickListenerDelete
 ) : ListAdapter<PictureWithHeader, RecyclerView.ViewHolder>(DiffUtilCallBackFavorites()) {
+
+    companion object {
+        private const val VIEW_TYPE_FAVORITE_ITEM = 0
+        private const val VIEW_TYPE_FAVORITE_HEADER = 1
+    }
 
     interface OnItemClickListenerFavorites {
         fun onItemClick(picture: PictureOfDay)

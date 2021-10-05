@@ -1,7 +1,6 @@
 package com.odis.odis.datalayer.remotedatasourse
 
 import com.odis.odis.BuildConfig
-import com.odis.odis.Utils.BASE_URL
 import com.google.gson.GsonBuilder
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
@@ -12,6 +11,10 @@ import java.io.IOException
 import javax.inject.Inject
 
 class RemoteDataSource @Inject constructor() {
+
+    companion object {
+        private const val BASE_URL = "https://api.nasa.gov/"
+    }
 
     private val nasaAPI = Retrofit.Builder()
         .baseUrl(BASE_URL)

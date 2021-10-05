@@ -6,7 +6,6 @@ import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import androidx.paging.cachedIn
-import com.odis.odis.Utils.BASE_PAGE_COUNT_FOR_PAGING
 import com.odis.odis.domain.entities.PictureOfDay
 import com.odis.odis.domain.usecases.GetListPicturesOfDayUseCase
 import com.odis.odis.ui.overview.overviewRecycler.PictureSource
@@ -18,6 +17,10 @@ import javax.inject.Inject
 class OverviewViewModel @Inject constructor(
     private val getListPicturesOfDayUseCase: GetListPicturesOfDayUseCase
 ) : ViewModel() {
+
+    companion object {
+       private const val BASE_PAGE_COUNT_FOR_PAGING = 10
+    }
 
     fun getList(): Flow<PagingData<PictureOfDay>> {
         return Pager(config = PagingConfig(pageSize = BASE_PAGE_COUNT_FOR_PAGING),

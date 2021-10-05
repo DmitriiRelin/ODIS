@@ -11,8 +11,6 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.odis.odis.SettableToolbarTitle
-import com.odis.odis.Utils.BASE_SPAN_COUNT
-import com.odis.odis.Utils.TITLE_OVERVIEW
 import com.odis.odis.databinding.FragmentOverviewBinding
 import com.odis.odis.domain.entities.PictureOfDay
 import com.odis.odis.ui.overview.overviewRecycler.OverviewAdapter
@@ -22,6 +20,11 @@ import kotlinx.coroutines.flow.collectLatest
 @Keep
 @AndroidEntryPoint
 class OverviewFragment : Fragment() {
+
+    companion object {
+        private const val BASE_SPAN_COUNT = 3
+        private const val TITLE_OVERVIEW = "Overview"
+    }
 
     private var _binding: FragmentOverviewBinding? = null
     private val binding get() = _binding!!

@@ -1,8 +1,10 @@
 package com.odis.odis.domain.entities
 
 import android.os.Parcelable
+import androidx.annotation.Keep
 import kotlinx.android.parcel.Parcelize
 
+@Keep
 @Parcelize
 data class PictureOfDay(
     val date: String,

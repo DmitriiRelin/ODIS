@@ -11,10 +11,6 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.odis.odis.SettableToolbarTitle
-import com.odis.odis.Utils.ONE_ITEM_IN_LIST
-import com.odis.odis.Utils.TITLE_IS_EMPTY
-import com.odis.odis.Utils.TITLE_MANY_FAVORITES
-import com.odis.odis.Utils.TITLE_ONE_FAVORITE
 import com.odis.odis.databinding.FragmentFavoritesBinding
 import com.odis.odis.domain.entities.PictureOfDay
 import com.odis.odis.ui.favorites.favoritesRecycler.FavoritesRecyclerAdapter
@@ -23,6 +19,13 @@ import dagger.hilt.android.AndroidEntryPoint
 @Keep
 @AndroidEntryPoint
 class FavoritesFragment : Fragment() {
+
+    companion object {
+        private const val TITLE_IS_EMPTY = "List is empty"
+        private const val TITLE_ONE_FAVORITE = "1 favorite"
+        private const val TITLE_MANY_FAVORITES = " favorites"
+        private const val ONE_ITEM_IN_LIST = 1
+    }
 
     private var _binding: FragmentFavoritesBinding? = null
     private val binding get() = _binding!!
